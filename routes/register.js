@@ -19,13 +19,13 @@ router.post("/", (req, res) => {
     .save()
     .then(result => {
       res.status(201).json({
-        message: "Registered Successfully"
+        response: "Registered Successfully"
       });
     })
     .catch(err => {
       console.log(err);
       res.status(500).json({
-        message: err
+        response: err
       });
     });
 });
